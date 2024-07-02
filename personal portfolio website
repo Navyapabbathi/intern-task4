@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        #home {
+                      color:#000000;
+        }
+        #home h2 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+        #about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+        #projects .project {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        #projects .project img {
+            width: 200px;
+            margin-right: 20px;
+        }
+        #projects .project div {
+            max-width: 500px;
+            text-align: left;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Web Developer | Programmer | Designer</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my projects and skills in web development</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="C:\Users\deepi\OneDrive\Pictures\blank girl 2" alt="Profile Picture">
+        <p>Hello! I'm Navya a passionate web developer with experience in building dynamic and responsive websites using HTML, CSS, and JavaScript. I love creating beautiful and functional web applications that provide great user experiences.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="C:\Users\deepi\OneDrive\Pictures\fead image.png" alt="Project 1">
+            <div>
+                <h3>Project 1</h3>
+                <p>This is a description of my first project. Todo list It showcases my skills in front-end development and design.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="C:\Users\deepi\OneDrive\Pictures\recipe fead 2.jpg" alt="Project 2">
+            <div>
+                <h3>Project 2</h3>
+                <p>This is a description of my second project.It is a recipe list It highlights my ability to build responsive web applications.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to get in touch with me via email at navya@gmail.com or connect with me on LinkedIn.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script>
+        // Add smooth scrolling to nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
